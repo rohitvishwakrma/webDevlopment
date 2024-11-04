@@ -1,0 +1,14 @@
+*{
+    margin:0; 
+    padding:0;
+}
+div{
+    background-color: #f12bd1;
+}
+h2{
+    background-color: teal;
+    color: aqua;
+}
+input{
+    background-color: inherit;
+}

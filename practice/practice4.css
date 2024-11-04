@@ -1,0 +1,23 @@
+.main{
+    height: 50px;
+    width: 900px;
+    border: 2px solid teal;
+    border-radius: 25px;
+    position: absolute;
+    top: 10px;
+    left: 250px;
+    background-color: pink;
+    justify-content: center;
+    align-items: center;
+}
+#div{
+    height: 50px;
+    width: 80px;
+    display: inline-block;
+    align-items: center;
+    margin-left: 20px;
+    inline-size:20;
+    font-size: larger;
+    font-weight: bold;
+    text-transform: capitalize;
+}

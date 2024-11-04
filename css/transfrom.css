@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+div{
+    height: 100%;
+    width: 100%;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    background-color: aqua;
+}
+#id1{
+    text-align: center;
+    height: 10px;
+    width: 50px;
+    margin-right:  30px auto;
+    padding-inline-start: 10px;
+    margin: 10px auto;
+}
+/* transfrom property  */
+.c1{   /* rotate */
+    background-color: beige;
+    transform: rotate(-0deg );
+}
+
+.c2{   /* sacle */
+    background-color: rgba(123, 123,223, 2);
+    transform: scale(2,0.2);
+}
+.c3{   /* translate */
+    background-color:pink;
+    transform:translate(60px, 50px );
+}
+.c4{   /* skew*/
+    background-color: rgba(111,34,55,4);
+    transform: skew(45deg);
+}
+
+.c5{   /* short hand notation */
+    background-color: yellow;
+    transform: rotate(34deg) scale(3) translate(50px,50px);
+}
+#rohit{
+    height:30px;
+    width:100px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: yellowgreen;
+    box-shadow: 2px 2px 10px red;
+    text-align: center;
+    justify-content: center;
+}

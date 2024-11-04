@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 500px;
+    width: 500px;
+    background-color: navajowhite;
+    border: 2px solid black;
+    display: grid;
+  /*   grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px; */
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+  /*   row-gap: 10px;
+    column-gap: 10px; */
+    grid-gap:10px 20px;
+}
+div{
+    height: 90px;
+    width: 80px;
+    background-color: yellowgreen;
+    border: 2px solid black;
+    align-items: center;
+    place-items: end;
+}
+#one{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    place-self:end   ;
+}
+#two{
+    grid-row: 1/span 2;
+}

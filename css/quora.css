@@ -1,0 +1,38 @@
+*{
+margin:0;
+padding:0;
+}
+html,body{
+height:100%;
+width:100%;
+}
+h1::first-letter{
+color:teal;}
+
+span p::selection{
+background-color:red;
+}
+/* psedo class*/
+h3{
+background-color: blue;
+}
+button{
+background-color:black;
+color:white;
+}
+input[type="radio"]:checked +label{
+    color: blue;
+    font-weight: bold;
+}
+p:nth-of-type(n){
+ background-color: aqua;
+}
+h3{
+    background-color: red;
+}
+h1{
+    background-color: rgb(27, 52, 52);
+}
+div span h6{
+    background-color: blanchedalmond;
+}

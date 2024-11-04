@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+  /*   display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.card{
+    height: 300px;
+    width: 250px;
+    border: 2px solid saddlebrown;
+    background-color: beige;
+    border-radius: 20px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#card1{
+    background-color: blue;
+    rotate: -8deg;
+}
+#card2{
+    background-color: yellow;
+    rotate: -16deg;
+}
+#card3{
+    background-color: aqua;
+    rotate: -24degx;
+}
+#card4{
+    background-color: pink ;
+    rotate: -32deg ;
+}

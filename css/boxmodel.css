@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding:0;
+}
+div{
+    background-color: antiquewhite;
+    height: 5%;
+    width:50%;
+  /*   border-width: 5px;
+    border-style: solid;
+    border-color: green; */
+     border: 5px solid blue;
+     border-right: 5px dotted pink;
+     border-radius: 1px;
+     font-size: medium;
+     font-weight: 100;
+     letter-spacing: 2.3px;
+     line-height: 2pc;
+     text-align: center;
+     text-decoration: red double underline;
+     text-transform: lowercase;
+
+} 
+p::selection{
+  background-color: blue;
+}
+h1{
+  height: 80px;
+  width: 200px;
+  border: 5px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  font-size: 200;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+  font-weight: bold;
+  font-display: 15px;
+  text-decoration: teal wavy underline;
+  text-transform: uppercase;
+  background-color:#eaf;
+  color: rgb(123, 233,232);
+}
+
+#bt{
+  
+}

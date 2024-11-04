@@ -1,0 +1,13 @@
+{
+    "files.exclude": {
+        "": true
+    },
+    "git.ignoreLimitWarning": true,
+    "standard.enable": false,
+    "terminal.integrated.commandsToSkipShell": [
+        "javascript"
+    ],
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.editor.enablePreviewFromQuickOpen": true,
+    "workbench.editor.enablePreviewFromCodeNavigation": true
+}

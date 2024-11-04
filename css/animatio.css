@@ -1,0 +1,30 @@
+#a1{
+    height: 100px;
+    width: 400px;
+    background-color: pink;
+    /* animation-name: fontanimation;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 0;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    animation:divbckcolor d2s ease-in 0s 3 normal ;
+}
+/* animation apply */
+@keyframes fontanimation {
+    from{
+        font-size: 20px;
+    }
+    to{
+        font-size: medium;
+    }
+    
+}
+@keyframes divbckcolor {
+    from{
+        width: 100px;
+    }
+    to{
+    width: 200px;
+    }
+} 

@@ -1,0 +1,9 @@
+div{
+    margin: 10px;
+    padding: 10px;
+    height: 200px;
+    width: 200px;
+    border: 2px dotted gray;
+    background-image: url(/html/waterfall.png);
+    background-size:auto ;/* contan/cover/auto */
+}
