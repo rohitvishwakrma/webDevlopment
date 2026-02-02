@@ -1,0 +1,22 @@
+var tl=gsap.timeline()
+tl.to("#box1",{
+    x:90,
+    duration:2,
+    delay:0.1,
+    rotation:360,
+    scale:0.5,
+})
+tl.to("#box2",{
+    x:90,
+    duration:2,
+    delay:0.1,
+    rotation:360,
+    scale:0.5,
+})
+tl.to("#box3",{
+    x:90,
+    duration:2,
+    delay:0.1,
+    rotation:360,
+    scale:0.5,
+})

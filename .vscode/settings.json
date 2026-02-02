@@ -1,13 +1,23 @@
 {
-    "files.exclude": {
-        "": true
-    },
-    "git.ignoreLimitWarning": true,
-    "standard.enable": false,
-    "terminal.integrated.commandsToSkipShell": [
-        "javascript"
-    ],
-    "workbench.editor.highlightModifiedTabs": true,
-    "workbench.editor.enablePreviewFromQuickOpen": true,
-    "workbench.editor.enablePreviewFromCodeNavigation": true
+  "files.exclude": {
+    "": true
+  },
+  "git.ignoreLimitWarning": true,
+  "standard.enable": false,
+  "terminal.integrated.commandsToSkipShell": ["javascript"],
+  "workbench.editor.highlightModifiedTabs": true,
+  "workbench.editor.enablePreviewFromQuickOpen": true,
+  "workbench.editor.enablePreviewFromCodeNavigation": true,
+  "liveServer.settings.CustomBrowser": "chrome",
+  "liveServer.settings.fullReload": true,
+  "liveServer.settings.useLocalIp": true,
+  "liveServer.settings.useWebExt": true,
+  "java.saveActions.organizeImports": true,
+  "editor.formatOnSave": true,
+  "editor.codeActions.triggerOnFocusChange": true,
+  "files.autoSaveDelay": 600,
+  "files.autoSave": "onFocusChange",
+  "liveServer.settings.wait": 1,
+  "liveServer.settings.root": "",
+  "liveServer.settings.port": 5501
 }

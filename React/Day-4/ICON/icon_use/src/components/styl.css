@@ -1,0 +1,12 @@
+#btn{
+  margin: 5px;
+  padding: 5px; 
+  background-color: green;
+  color: white;
+  border-radius: 15px;
+}
+#cart{
+  margin: 5px;
+  padding: 5px; 
+  background-color: green;
+}

@@ -1,0 +1,51 @@
+/* Styling the parent div */
+.parent {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    /* Making it circular */
+    background-color: lightblue;
+    transition: background 0.3s ease;
+}
+
+/* Styling the child div */
+.child {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    /* Circular child */
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: background 0.3s ease;
+}
+
+/* Initially hide the paragraph */
+.hidden-text {
+    display: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Hover effect on parent */
+.parent:hover {
+    background-color: #ff5733;
+    /* Change parent color */
+}
+
+/* Hover effect on child */
+.parent:hover .child {
+    background-color: #ff5733;
+    /* Change child color */
+}
+
+/* Show paragraph on hover */
+.parent:hover .child .hidden-text {
+    display: block;
+}

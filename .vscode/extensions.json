@@ -1,7 +1,8 @@
 {
-    "recommendations": [
-        "1yib.nodejs-bundle",
-        "formulahendry.code-runner",
-        "vscjava.vscode-java-test"
-    ]
+  "recommendations": [
+    "1yib.nodejs-bundle",
+    "formulahendry.code-runner",
+    "vscjava.vscode-java-test",
+    "ritwickdey.live-sass"
+  ]
 }

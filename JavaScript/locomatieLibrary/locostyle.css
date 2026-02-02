@@ -1,0 +1,114 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+/* #main {
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+} */
+#page1 {
+    height: 50vh;
+    width: 100%;
+    background-color: rgb(9, 19, 28);
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+#page2 {
+    height: 50vh;
+    width: 100%;
+    background-color: rgb(81, 111, 138);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#page3 {
+    height: 50vh;
+    width: inherit;
+    background-color: rgb(161, 181, 199);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#page4 {
+    height: 50vh;
+    width: inherit;
+    background-color: rgb(143, 49, 130);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#page2 #img-div {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#img-div img {
+    height: 80%;
+    width: 50%;
+    object-fit: cover;
+    scale: 1;
+    object-fit: cover;
+}
+
+#page3 h1 {
+    position: absolute;
+    left: -100%;
+}
+
+#page3 #img3 {
+    height: 80%;
+    width: 50%;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#img3 #p_img3 {
+    height: 100%;
+    width: 100%;
+    object-fit: fit;
+    overflow: hidden;
+    scale: 1.2;
+}
+
+.card{
+    height: 300px;
+    width: 250px;
+    border: 2px solid saddlebrown;
+    background-color: beige;
+    border-radius: 20px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#card1{
+    top: 50%;
+    background-color: rgb(129, 121, 136);
+}
+#card2{
+    top: 50%;
+    background-color: rgb(16, 10, 136);
+}
+#card3{
+    top: 50%;
+    background-color: rgb(168, 160, 17);
+}
+#card4{
+    top: 50%;
+    background-color: rgb(129, 121, 136);
+}

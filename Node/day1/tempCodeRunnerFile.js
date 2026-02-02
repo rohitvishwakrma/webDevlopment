@@ -1,0 +1,1 @@
+console.log( add.addFnc( 3, 3 ) );

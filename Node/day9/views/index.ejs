@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>filesRead</title>
+</head>
+
+<body>
+  <h2>Files in Directory</h2>
+  <ul>
+    <% files.forEach(function(file) { %>
+      <li>
+        <%= file %>
+          <button onclick="deleteFile('<%= file %>')">Delete</button>
+      </li>
+      <% }); %>
+  </ul>
+  <h2>Edit a File</h2>
+  <form id="editForm" method="POST" action="/edit">
+    <label for="filename">Filename:</label>
+    <input type="text" id="filename" name="filename" required><br><br>
+    <label for="content">New Content:</label><br>
+    <textarea id="content" name="content" rows="6" cols="40" required></textarea><br><br>
+    <button type="submit">Update File</button>
+  </form>
+  <script>
+    // Use fetch to submit the form as JSON
+    document.getElementById( 'editForm' ).addEventListener( 'submit', async function ( e )
+    {
+      e.preventDefault();
+      const filename = document.getElementById( 'filename' ).value;
+      const content = document.getElementById( 'content' ).value;
+      const res = await fetch( '/edit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify( { filename, content } )
+      } );
+      const text = await res.text();
+      alert( text );
+      window.location.reload();
+    } );
+    // Delete file function
+    async function deleteFile ( filename )
+    {
+      if ( !confirm( 'Are you sure you want to delete ' + filename + '?' ) ) return;
+      const res = await fetch( '/delete', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify( { filename } )
+      } );
+      const text = await res.text();
+      alert( text );
+      window.location.reload();
+    }
+  </script>
+</body>
+
+</html>

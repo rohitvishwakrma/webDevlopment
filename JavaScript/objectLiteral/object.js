@@ -11,4 +11,4 @@ for (let ele in car) {
     if (Object.hasOwnProperty.call(car, ele)) {
       console.log(ele,car[ele]);
     }
-}
+}   

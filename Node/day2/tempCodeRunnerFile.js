@@ -1,0 +1,1 @@
+fs.rename( "data.text", "hello.text" );
