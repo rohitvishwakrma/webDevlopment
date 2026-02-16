@@ -1,16 +1,13 @@
-const mongoose = require( 'mongoose' );
+import mongoose from "mongoose";
 const connectDB = async () =>
 {
   try
   {
-    mongoose.connect( "mongodb+srv://rohitvishwakarma02198:Vish020899@cluster1.xyymlkt.mongodb.net/TestTB" );
+    await mongoose.connect( "mongodb+srv://rohitvishwakarma02198:Vish020899@cluster1.xyymlkt.mongodb.net/TestTB" );
     console.log( "Mongodb is connected.." );
-
-  }
-  catch ( err )
+  } catch ( err )
   {
     console.log( "mongodb is not connected!" );
-
   }
-}
-module.exports = connectDB;
+};
+export default connectDB;

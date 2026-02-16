@@ -1,46 +1,64 @@
-const express = require( 'express' );
+import express from "express";
+import connectDB from "../config/db.js";
+import debug from "debug";
+import User from './model/user.js';
+
 const app = express();
-const connectDB = require( './config/db' );
-const debuglog = require( 'debug' )( "development:app" );
-const createUser = require( './model/user' );
-// insert user scehma 
+const debuglog = debug( "development:app" );
+
 app.get( '/create', async ( req, res, next ) =>
 {
-  const user = await createUser.create( {
-    name: "Mohit",
-    age: 21,
-    email: "Mohit1@gmail.com",
-  } )
-  // svae the data 
-  user.save();
-
-  //  console.log( "user save " );
-  debuglog( "user created" );
-
-  res.send( user );
+  try
+  {
+    const user = new User( {
+      name: "Mohit",
+      age: 21,
+      email: "Mohit1@gmail.com",
+    } );
+    await user.save();
+    debuglog( "user created" );
+    res.send( user );
+  } catch ( err )
+  {
+    next( err );
+  }
 } );
-//schema read ,finOne, find(all values show),findOneAndUpdate(update name) ,
 app.get( '/read', async ( req, res, next ) =>
 {
-  const user = await createUser.findOne( { name: "Rohit" } );
-  const user1 = await createUser.find( { name: "Rohit" } );
-  debuglog( "user read" );
-  res.send( user );
-} )
+  try
+  {
+    const user = await User.findOne( { name: "Rohit" } );
+    // const user1 = await User.find({ name: "Rohit" }); // not used
+    debuglog( "user read" );
+    res.send( user );
+  } catch ( err )
+  {
+    next( err );
+  }
+} );
 
 app.get( '/update', async ( req, res, next ) =>
 {
-  const user = await createUser.findOneAndUpdate( { name: "Rohit" }, { name: "Rohit Vishwakarma" }, { new: true } );
-  debuglog( "user name update" );
-  res.send( user );
-  console.log( user );
-
-} )
+  try
+  {
+    const user = await User.findOneAndUpdate(
+      { name: "Rohit" },
+      { name: "Rohit Vishwakarma" },
+      { new: true }
+    );
+    debuglog( "user name update" );
+    res.send( user );
+    console.log( user );
+  } catch ( err )
+  {
+    next( err );
+  }
+} );
 // cnnection of data base
 connectDB();
 // port show
 app.listen( 2000, ( req, res ) =>
 {
-  console.log( "SERVER IS  runing on port 20000.." );
+  console.log( "SERVER IS  runing on port 2000.." );
 
 } )
